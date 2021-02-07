@@ -7,8 +7,6 @@ package ${package}.constant;
  * Spring Profiles 常量
  *
  * Write the code. Change the world.
- *
- * @author trang
  */
 public final class ApplicationConstants {
 
