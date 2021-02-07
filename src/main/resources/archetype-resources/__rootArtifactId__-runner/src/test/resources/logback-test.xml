@@ -1,0 +1,18 @@
+#set( $symbol_pound = '#' )
+#set( $symbol_dollar = '$' )
+#set( $symbol_escape = '\' )
+<configuration debug="false" scan="false">
+
+    <property name="DEFAULT_PATTERN" value="%d{yyyy-MM-dd HH:mm:ss.SSS} %-5p [%t] ${symbol_escape}${symbol_escape}(%F:%L${symbol_escape}${symbol_escape}) - %msg%n"/>
+
+    <appender name="CONSOLE" class="ch.qos.logback.${package}.archetype.core.ConsoleAppender">
+        <encoder>
+            <pattern>${symbol_dollar}{DEFAULT_PATTERN}</pattern>
+        </encoder>
+    </appender>
+
+    <root level="info">
+        <appender-ref ref="CONSOLE"/>
+    </root>
+
+</configuration>

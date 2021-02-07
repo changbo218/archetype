@@ -1,0 +1,28 @@
+#set( $symbol_pound = '#' )
+#set( $symbol_dollar = '$' )
+#set( $symbol_escape = '\' )
+mybatis-plus:
+  mapper-locations: classpath:/mapper/**/*Mapper.xml
+
+spring:
+  application:
+    name: ${projectName}
+  mvc:
+    servlet:
+      load-on-startup: 1
+    throw-exception-if-no-handler-found: true
+  jackson:
+    default-property-inclusion: non_null
+    time-zone: GMT+8
+    date-format: yyyy-MM-dd HH:mm:ss
+    serialization:
+      write_null_map_values: true
+      write_dates_as_timestamps: false
+    deserialization:
+      fail_on_unknown_properties: false
+    parser:
+      allow_single_quotes: true
+server:
+  port: 8080
+  servlet:
+    context-path: /demo

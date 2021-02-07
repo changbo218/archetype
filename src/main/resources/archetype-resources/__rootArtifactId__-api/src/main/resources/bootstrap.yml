@@ -1,0 +1,15 @@
+#set( $symbol_pound = '#' )
+#set( $symbol_dollar = '$' )
+#set( $symbol_escape = '\' )
+spring:
+  application:
+    name: ${projectName}
+  datasource:
+      url: jdbc:mysql://xxx:xxx/database?useUnicode=true&characterEncoding=UTF-8&useSSL=false
+      driver-class-name: com.mysql.jdbc.Driver
+      username: user
+      password: pass
+eureka:
+  client:
+    fetch-registry: false
+    register-with-eureka: false
